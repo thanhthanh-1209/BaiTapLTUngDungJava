@@ -1,0 +1,20 @@
+package exercise2;
+import java.util.Scanner;
+public class test4 {
+	public static void main (String[]args)
+	{
+		float a,b,c,x1,x2;
+		double delta;
+		Scanner scan = new Scanner(System.in);
+		a = scan.nextFloat();
+		b =scan.nextFloat();
+		c =scan.nextFloat();
+		System.out.println("delta:");
+		delta = Math.pow(b,2) + 4*a*c;
+        x1 = ((-b +(float) Math.sqrt(delta))/ 2*a);
+        x2 = ((-b -(float) Math.sqrt(delta))/ 2*a);
+        System.out.println("ket qua dau là"+x1 +"ket qua hai la:" +x2);
+        scan.close();
+	}
+
+}
