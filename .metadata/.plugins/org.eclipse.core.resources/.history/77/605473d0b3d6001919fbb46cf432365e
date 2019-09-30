@@ -1,0 +1,81 @@
+package excersise3;
+import java.util.Scanner;
+public class test1 {
+
+	public static void ptb1 (String[] args) {
+		// TODO Auto-generated method stub
+		
+		 float a,b,x;
+	        System.out.println("phuong trinh bac 1");
+	        Scanner scan= new Scanner(System.in);
+	        System.out.println(" so a:");
+	        a=scan.nextFloat();
+	        System.out.println(" so b:");
+	        b=scan.nextFloat();
+	        if(a==0)
+	        {
+	            if(b==0)
+	            {
+	                System.out.println("phuong trinh vo so nghiem:");
+	            }
+	            else
+	            {
+	                System.out.println("phuong trinh vo nghiem:");
+	            }
+	        } 
+	        else
+	        {
+	            if(b==0)
+	            {
+	                System.out.println("phuong trinh co nghiem la x=0");
+	            }
+	            else
+	            {
+	                System.out.println("phuong trinh co nghiem la:"+( x=-b/a));
+	            }
+	        }
+	       
+	        scan.close();
+	}
+
+	 public static void ptb2 (String[] args) 
+     {
+     double a,b,c,x1,x2,delta,x;
+     System.out.println("giai phuong trinh bac 2:");
+     Scanner key = new Scanner(System.in);
+     System.out.println("nhap so a cua ban:");
+     a= key.nextInt();
+     System.out.println("nhap so b cua ban:");
+     b= key.nextInt();
+     System.out.println("nhap so c cua ban:");
+     c= key.nextInt();
+     if(b==0)
+     {
+         System.out.println("phuong trinh cua ban la:");
+         {
+         ptb1();
+         }
+     }
+     else
+     {
+         delta=Math.pow(b,2)+4*a*c;
+         if(delta<0)
+         {
+             System.out.println("phuong trinh vo nghiem:");
+         }
+         else if(delta==0)
+         {
+             System.out.println("phuong trinh co nghiem kep:"+(x=-b/2*a));
+         }
+         else
+         {
+             x2=(-b-sqrt(delta)/2*a);
+             x1=(-b+sqrt(delta)/2*a);
+             System.out.println("ket qua 1:"+x1 +"ket qua 2:"+ x2 );
+         }
+		
+}
+}
+
+
+

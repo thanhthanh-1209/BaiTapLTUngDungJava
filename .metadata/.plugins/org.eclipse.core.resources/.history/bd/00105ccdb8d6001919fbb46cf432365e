@@ -1,0 +1,16 @@
+package excersise3;
+
+public class test3 {
+
+	public static void tinhTiendien(String[]args) {
+		int soDien = 0;
+		int tienDien;
+		if (soDien < 50) {
+			tienDien = soDien * 1000;
+			System.out.println("tien dien:" + tienDien);
+		} else {
+			tienDien = + (50 * 1000 + (soDien - 50) * 1200);
+			System.out.println("tien dien: " + tienDien);
+		}
+	}
+}
